@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="./generate.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP Generator</title>
   </head>
   <body>
-    OTP<input type="password" placeholder="Enter password" />
+    OTP<input type="password" placeholder="Enter password" id="otp" />
+    <button>Show password</button>
+    <button onclick="generate()">Click for OTP</button>
   </body>
 </html>

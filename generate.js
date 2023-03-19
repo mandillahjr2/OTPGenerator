@@ -3,14 +3,17 @@ generate = () => {
   document.getElementById('otp').value = otp;
 }
 showHide = () => {
-  var passwordFields = document.querySelectorAll('input[type=password]');
+  let passwordFields = document.querySelectorAll('input[class=pw]');
   passwordFields.forEach(passwordField => {
-    var state = passwordField.type == "password" ? "text" : "password";
+    let state = passwordField.type == "password" ? "text" : "password";
     passwordField.type = state;
   });
 }
 validate = () => {
-  let userOTP = document.getElementById('user-otp').value
-  let isValid = otp === userOTP;
-  alert(`OTP  ${isValid}`);
+  let userOTP = document.getElementById('user-otp').value;
+  let serverOTP = document.getElementById('otp').value;
+  let isValid = userOTP == serverOTP;
+  alert(`OTP  Validity => ${isValid}`);
 }
+
+

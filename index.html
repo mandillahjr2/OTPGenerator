@@ -8,8 +8,13 @@
     <title>OTP Generator</title>
   </head>
   <body>
-    OTP<input type="password" placeholder="Enter password" id="otp" />
-    <button>Show password</button>
-    <button onclick="generate()">Click for OTP</button>
+    <h6>OTP from Server</h6>
+    <input type="password" placeholder="Enter password" id="otp" readonly />
+    <button onclick="showHide()">Show passwords</button></br>
+    <button onclick="generate()">Click for New OTP</button>
+    <h6>Enter OTP</h6>
+    <input type="password" placeholder="Enter password" id="user-otp" />
+    <input type="submit" onclick="validate()">
+    <!-- validation -->
   </body>
 </html>
